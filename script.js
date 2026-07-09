@@ -12,6 +12,7 @@ document.getElementById('btn-calcular').addEventListener('click', function() {
     // Pista: Usa querySelector con el name del atributo.
     const asientoSeleccionado = document.querySelector('input[name="asiento"]:checked');
 
+
     // 2. VALIDACIÓN INICIAL
     const mensajeAlerta = document.getElementById('mensaje-alerta');
     if (!precioPelicula || isNaN(cantidad) || cantidad <= 0) {
@@ -30,7 +31,7 @@ document.getElementById('btn-calcular').addEventListener('click', function() {
     // REQUISITO JS 2: Estructura condicional (if/else) para los cargos por tipo de asiento
     // Si el asiento es "vip", el cargo extra es de $50 pesos POR CADA BOLETO.
     if (asientoSeleccionado && asientoSeleccionado.value === 'vip') {
-        // ESCRIBE AQUÍ TU CÓDIGO PARA CALCULAR LOS CARGOS EXTRA
+       cargosAsiento = 50 * cantidad; // ESCRIBE AQUÍ TU CÓDIGO PARA CALCULAR LOS CARGOS EXTRA
     }
 
     // Cálculo de Snacks / Combos
@@ -38,6 +39,7 @@ document.getElementById('btn-calcular').addEventListener('click', function() {
     
     const comboPalomitas = document.getElementById('combo-palomitas');
     const comboHotdog = document.getElementById('combo-hotdog');
+    const comboHotdog = document.getElementById('combo-pareja');
     // REQUISITO JS 3: Declarar la variable para capturar el nuevo "combo-pareja" del HTML
     
 
@@ -47,6 +49,10 @@ document.getElementById('btn-calcular').addEventListener('click', function() {
     
     if (comboHotdog && comboHotdog.checked) {
         totalSnacks += parseFloat(comboHotdog.value);
+    }
+
+    if (comboPareja && combopareja.checked) { 
+        totalSnacks += parseFloat(comboPareja.value);
     }
 
     // REQUISITO JS 4: Sumar condicionalmente el valor de "combo-pareja" si el checkbox está activo
