@@ -39,7 +39,7 @@ document.getElementById('btn-calcular').addEventListener('click', function() {
     
     const comboPalomitas = document.getElementById('combo-palomitas');
     const comboHotdog = document.getElementById('combo-hotdog');
-    const comboHotdog = document.getElementById('combo-pareja');
+    const comboPareja = document.getElementById('combo-pareja');
     // REQUISITO JS 3: Declarar la variable para capturar el nuevo "combo-pareja" del HTML
     
 
@@ -51,7 +51,7 @@ document.getElementById('btn-calcular').addEventListener('click', function() {
         totalSnacks += parseFloat(comboHotdog.value);
     }
 
-    if (comboPareja && combopareja.checked) { 
+    if (comboPareja && comboPareja.checked) { 
         totalSnacks += parseFloat(comboPareja.value);
     }
 
