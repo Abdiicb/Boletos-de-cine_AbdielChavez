@@ -18,14 +18,24 @@
             <form id="formulario-cine">
                 
                 <div class="campo">
-                    <label for="pelicula">Película:</label>
-                    <select id="pelicula" required>
-                        <option value="">-- Selecciona una película --</option>
-                        <option value="120">Aventura Espacial ($120 MXN)</option>
-                        <option value="100">Mansión Embrujada ($100 MXN)</option>
-                        <option value="90">Romance en Paris ($90 MXN)</option>
-                        </select>
+                    <label>Película:</label>
+                <div class="opciones-peliculas">
+                <div class="pelicula-opcion" data-precio="120" data-nombre="Aventura Espacial">
+                    <img src="IMG/aventuraespacial.jfif" alt="Aventura Espacial" class="poster">
+                    <p>Aventura Espacial ($120 MXN)</p>
                 </div>
+
+                <div class="pelicula-opcion" data-precio="100" data-nombre="Mansión Embrujada">
+                    <img src="IMG/mansionembrujada.jfif" alt="Mansión Embrujada" class="poster">
+                    <p>Mansión Embrujada ($100 MXN)</p>
+                </div>
+
+                <div class="pelicula-opcion" data-precio="90" data-nombre="Romance en París">
+                    <img src="img/romanceenparis.jfif" alt="Romance en París" class="poster">
+                    <p>Romance en París ($90 MXN)</p>
+                </div>
+            </div>
+        </div>
 
                 <div class="campo">
                     <label for="cantidad">Cantidad de boletos:</label>

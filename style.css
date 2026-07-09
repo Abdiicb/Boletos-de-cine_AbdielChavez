@@ -165,3 +165,34 @@ footer {
     color: #64748b;
     font-size: 0.85rem;
 }
+
+.opciones-peliculas {
+  display: flex;
+  gap: 20px;
+}
+
+.pelicula-opcion {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.pelicula-opcion:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+.pelicula-opcion.seleccionada {
+  border-color: #28a745;
+  background-color: #f0fff0;
+}
+
+.poster {
+  width: 100px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 5px;
+}

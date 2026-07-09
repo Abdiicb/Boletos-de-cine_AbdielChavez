@@ -2,9 +2,9 @@
 document.getElementById('btn-calcular').addEventListener('click', function() {
     
     // 1. OBTENCIÓN DE ENTRADAS (INPUTS)
-    const selectPelicula = document.getElementById('pelicula');
+    const selectPelicula = document.getElementById('pelicula')
     const precioPelicula = parseFloat(selectPelicula.value);
-    
+
     const inputCantidad = document.getElementById('cantidad');
     const cantidad = parseInt(inputCantidad.value);
 
