@@ -196,3 +196,15 @@ footer {
   object-fit: cover;
   border-radius: 5px;
 }
+
+.pelicula-opcion {
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.pelicula-opcion.seleccionada {
+  border: 2px solid peachpuff;
+  background-color: burlywood;
+}
